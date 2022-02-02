@@ -1,0 +1,63 @@
+.navbar {
+    background-color: #2a3036;
+}
+
+.btn-outline-success {
+    color: #1dabde;
+    border-color: #1dabde;
+}
+
+.btn{
+    background-color: #3d434a;
+    font-weight: 500;
+}
+
+.btn-primary {
+    color: #fff;
+    border-color: #1dabde;
+}
+
+.btn-outline-primary{
+    background-color: transparent;
+    border-color: #1dabde;
+    color: #1dabde;
+}
+
+.btn:hover {
+  background-color: #1dabde;
+  border-color: #1dabde;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border-color: #1dabde;
+    color: #1dadbe;
+}
+
+.active {
+    border-bottom: 1px solid #fff;
+}
+
+.navbar-brand {
+    font-weight: 300;
+}
+
+footer {
+    background-color: #2a3036;
+    font-weight: 100;
+    color: #fff;
+    padding-left: 2.5%;
+}
+
+#impressum {
+    color: #fff;
+}
+
+.card img {
+    width: 330px;
+    height: 200px;
+}
+
+.card-title {
+    color: #1dabde;
+}
