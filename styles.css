@@ -61,3 +61,15 @@ footer {
 .card-title {
     color: #1dabde;
 }
+
+.first-column {
+    width: 30%;
+}
+
+.second-column {
+    width: 30%;
+}
+
+.third-column {
+    width:12.5%;
+}
