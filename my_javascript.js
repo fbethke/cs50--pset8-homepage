@@ -9,6 +9,7 @@ $(function () {
 })
 
 var check = 0;
+var hide = 0;
 
 function turn_around() { 
   if (check == 0){
@@ -27,40 +28,19 @@ function removeDummy() {
   return false;
 }
 
-function compare( a, b ) {
-  if ( a < b ){
-    return -1;
-  }
-  if ( a > b ){
-    return 1;
-  }
-  return 0;
-}
-
-function add_sorted_list (input) {
-  var elem = document.getElementById("table");
-  for (let i = 0, len = input.length; i < len; i++) {
-    var s = compare(elem[i], elem[i+1]);
-    if (s == 1){
-      var smaller = input[i];
-      input[i] = input[i+1];
-      input[i+1] = smaller;
+function hide_show() {
+  if (hide == 0){
+    var items = document.getElementsByClassName("list-group-horizontal");
+    for (let item in items){
+      items[item].hidden = true;  
     }
+    hide = 1;
   }
-  for (let i = 0, len = input.length; i < len; i++){
-    elem.appendChild(input[i]);
+  else {
+    var items = document.getElementsByClassName("list-group-horizontal");
+    for (let item in items){
+      items[item].hidden = false;
+    }
+    hide = 0;
   }
 }
-
-function sort_list() {
-  var items = document.getElementsByClassName("list-group-horizontal");
-  add_sorted_list(items);  
-  }
-  
-  
-  /* 
-  find all elements
-  put in array
-  delete old ones
-  put in new ones
-  */

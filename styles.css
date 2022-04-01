@@ -73,3 +73,12 @@ footer {
 .third-column {
     width:12.5%;
 }
+
+.card img{
+    height: auto;
+}
+
+.btn-link {
+    color: #212529;
+    background-color: rgb(0 0 0 / 5%);
+}
